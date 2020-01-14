@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid_moma</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        h3{
+            margin: 12px 20px 1px 1px;
+            font-family:'Fjalla One', sans-serif;
+            font-size: 25px;
+        }
+        h4{
+            display: inline-block;
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 15px;
+            margin: 20px 20px 1px 1px;
+        }
+        .h4 span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.7em;
+        }
+        
+        img{
+            width: 100%;
+        }
+        .container{
+            display: grid;
+            padding-top: 1em;
+            grid-template-columns: repeat(5,1fr);
+            grid-auto-rows: 200px;
+        }
+        .element{
+            background-attachment: white;
+        }
+        .ele1 .ele4 .ele5{
+            padding: 1.5em 1.1em;
+        }
+        .ele1{
+            background: #F0E65C;
+            grid-column: 2 span;
+        }
+        .ele2{
+            grid-column: 3 span;
+        }
+        .ele3{
+            grid-column: 3 span;
+        }
+        .ele4{
+            background: #700701;
+            grid-column: 2 span;
+        }
+        .ele h3{
+            margin: 12px 1px 1px 20px;
+        }
+        .ele h4{
+            margin: 12px 1px 1px 20px;
+        }
+        .ele5{
+            background: #CD4D4C;
+            grid-column: 2 span;
+        }
+        .ele6{
+            grid-column: 3 span;
+        }
+        .ele2 img, .ele3 img, .ele6 img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .ele2 img{
+            object-position: top center;
+        }
+        
+</style>
+</head>
+<body>
+   <div class="container">
+    <div class="element ele1">  
+     <div align="right"> <h3> Ebner toma la forma de fotografías y poemas que cuestionan los límites y la ambigüedad del lenguaje.</h3>
+        <h4>Shannon Ebnerr</h4><span>2017</span>
+        </div>
+     </div>
+      <div class="element ele2">
+          <img src="img/shannon-ebner-01_700px.jpg">
+      </div>
+      <div class="element ele3">
+          <img src="img/dali01.jpg">
+      </div>
+      <div class="element ele4">
+          <h3>La persistencia de la memoria es un cuadro del pintor surrealista Salvador Dalí, que fue ejecutado en el año 1931 en menos de cinco horas.</h3>
+          <h4>Salvador Dalí</h4><span>1931</span>
+      </div>
+      <div class="element ele5">
+         <div align="right"><h3>Considerado uno de los fundadores del Impresionismo,Degas capta las sensaciones de vida y movimiento, sus retratos muy apreciados por la complejidad psicológica y sensación de verdad que transmiten.</h3>
+          <h4>Edgar Degas</h4><span>1883</span>
+      </div>
+      </div>
+      <div class="element ele6">
+          <img src="img/edgardegas3.jpg">
+      </div>
+      </div>
+</body>
+</html>
